@@ -1,0 +1,18 @@
+hostname=input("Enter the Hostname: ")
+distro=input("Enter Distro Name: ")
+role=input("Enter role App/DB: ")
+cpu_core=int(input("Enter the number of CPU: "))
+memory=int(input("Enter memory in GB: "))
+environment=input("Enter the Environment: ")
+
+
+print("========================\nServer Inventory\n========================")
+print("Hostname is: ", hostname)
+print(f"OS Distro is: {distro}")
+print("Role is: ", role)
+print("No. of CPU is: ", cpu_core)
+print(f"Memory is: {memory} GB")
+print(f"Environment is: {environment}")
+print(f"Upgraded CPU Core is: {cpu_core+4}")
+print("Upgraded memory is: ", memory+8, "GB")
+print("========================")        

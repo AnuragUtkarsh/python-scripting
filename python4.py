@@ -1,0 +1,11 @@
+hostname="app01"
+cpu=8
+os=9.7
+server_running=True
+memory="11"
+print(type(hostname))
+print(type(cpu))
+print(type(os))
+print(type(server_running))
+print(type(memory))
+print(int(memory)+2)

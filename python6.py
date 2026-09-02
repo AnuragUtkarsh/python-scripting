@@ -1,0 +1,11 @@
+hostname=input("Enter Hostname: ")
+ssh_port=int(input("Enter Port: "))
+cpu_core=int(input("Enter CPU Core: "))
+memory=int(input("Enter Memory in GB: "))
+
+print("========================\nServer Information\n========================")
+print("Hostname: ",hostname)
+print("Host Port: ", ssh_port)
+print("CPU Cores: ",cpu_core)
+print("Memory: ", memory, "GB")
+print("========================")

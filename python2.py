@@ -1,0 +1,1 @@
+print("========================\nEmployee Information\n========================\nName: Paduu\nDepartment: Linux\nExperience: 5\nSkills: Linux Shell Ansible\nLocation: Hyderabad\n========================")
