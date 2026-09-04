@@ -1,0 +1,13 @@
+hostname=input("Enter the Hostname: ")
+distro_os=input("Enter the Distro: ")
+environment=input("Enter the Environment(PRD/DEV/QAS): ")
+cpu_core=int(input("Enter number of cpu core: "))
+memory=int(input("Enter Memory in GB: "))
+
+print("Hostname printed is: ", hostname)
+print(f"OS Distro is: {distro_os}")
+print(f"Environment is: {environment}")
+print("No of CPU core: ", cpu_core)
+print("Total Memory is: ", memory, "GB")
+print("Upgraded CPU is: ", cpu_core+4)
+print("Upgraded Memory is: ", memory+5, "GB")
