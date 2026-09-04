@@ -1,14 +1,12 @@
-# Python Scripting for DevOps
+# Python DevOps Scripting Journey
 
-This repository contains my hands-on Python learning journey focused on
-Linux administration, DevOps automation, scripting, APIs, SSH/SFTP,
-monitoring and infrastructure automation.
+Hands-on Python learning focused on Linux and DevOps automation.
 
 ## Day 1 - Python Fundamentals
 
 Topics covered:
-
-- Python basics
+- Python environment and virtual environment
+- Python REPL vs Python script
 - print()
 - Variables
 - Data types
@@ -16,40 +14,89 @@ Topics covered:
 - Type conversion
 - input()
 - f-strings
-- Basic arithmetic operations
-- Formatted output
+- Basic arithmetic
 
-## Project 1 - Server Inventory
+### Day 1 Project
+Server Inventory script.
 
-`server_inventory.py` is an interactive Python script that collects
-basic server information from the user.
-
-### Information collected
-
+The script accepts server details such as:
 - Hostname
-- OS Distribution
-- Server Role
-- CPU Cores
+- OS / Distro
+- Role
+- CPU cores
 - Memory
 - Environment
 
-The script also calculates a sample server upgrade:
+It also performs basic resource upgrade calculations.
 
-- Upgraded CPU Cores
-- Upgraded Memory
+---
 
-### Example
+## Day 2 - Conditions and Decision Making
 
-```text
-========================
-Server Inventory
-========================
-Hostname is:  app01
-OS Distro is: rhel
-Role is:  App
-No. of CPU is:  8
-Memory is: 12 GB
-Environment is: prod
-Upgraded CPU Core is: 12
-Upgraded memory is: 20 GB
-========================
+Topics covered:
+- Comparison operators
+- if
+- if-else
+- if-elif-else
+- Logical AND
+- Logical OR
+- Logical NOT
+- Combined conditions
+- Nested if
+- Boundary / edge-case testing
+
+### Day 2 Scripts
+
+- comparison.py
+- if_condition.py
+- cpu_classification.py
+- resource_check.py
+- resource_alert.py
+- service_check.py
+- bool_test.py
+- combined_check.py
+- nested_check.py
+- threshold_check.py
+
+### Day 2 Project
+
+**Server Health Monitor**
+
+The script accepts:
+- Hostname
+- Environment
+- CPU utilization
+- Memory utilization
+- Service status
+
+It evaluates service and resource conditions and generates a server health status.
+
+---
+
+## Day 3 - Loops
+
+Topics planned:
+- while loop
+- for loop
+- range()
+- Loop with conditions
+- break
+- continue
+- Nested loops
+- User input with loops
+- Practical automation exercises
+
+### Goal
+
+Build practical Python scripts for Linux and DevOps automation and gradually develop the ability to write scripts independently.
+
+---
+
+## Learning Approach
+
+- Hands-on practice
+- Type code manually
+- Debug errors
+- Test edge cases
+- Build practical projects
+- Commit work to Git regularly
