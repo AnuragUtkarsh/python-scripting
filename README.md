@@ -1,195 +1,168 @@
-# Python DevOps Scripting Journey
+# Python Scripting for DevOps
 
-A hands-on Python learning journey focused on Linux and DevOps automation.
+This repository contains my hands-on Python learning journey focused on Linux, DevOps, automation, scripting, APIs, SSH/SFTP, Flask and cloud automation.
 
-## Environment
+## Learning Goal
 
-- OS: RHEL 9.7
-- Python: 3.9.23
-- Git: 2.52.0
-- Lab: RHEL Linux VM
-- Workspace: `/opt/python-devops`
-- Virtual Environment: `venv`
+- Learn Python from zero to advanced DevOps automation
+- Write Python scripts independently without relying on autocomplete
+- Build 50+ practical DevOps scripts
+- Automate Linux administration and operational tasks
+- Work with APIs, SSH, SFTP and cloud platforms
+- Build practical Flask dashboards
+- Prepare Python skills for DevOps/SRE interviews
 
 ---
 
 # Day 1 - Python Fundamentals
 
-## Topics Covered
+Topics covered:
 
+- Python environment setup
+- Virtual environment
 - Python interpreter and REPL
 - `print()`
-- Comments
-- Strings
-- Integers and Floats
-- Boolean values
 - Variables
+- Strings
+- Integers
+- Floats
+- Boolean
 - `type()`
 - Type conversion
 - `input()`
+- `int()`, `float()`, `str()`
 - f-strings
-- Basic arithmetic
-- User input handling
+- Comments
+- Basic calculations
 
-## Hands-on Scripts
+### Practical
 
-- `python1.py`
-- `python2.py`
-- `python3.py`
-- `python4.py`
-- `python5.py`
-- `python6.py`
-- `python7.py`
-- `server_inventory.py`
+- Server information input
+- Server inventory script
+- CPU and memory upgrade calculation
 
-## Mini Project
+### Project
 
-### Server Inventory
-
-Created an interactive server inventory script that accepts:
-
-- Hostname
-- OS Distribution
-- Server Role
-- CPU Cores
-- Memory
-- Environment
-
-Also performs basic resource upgrade calculations.
+`server_inventory.py`
 
 ---
 
-# Day 2 - Conditional Logic
+# Day 2 - Conditions and Decision Making
 
-## Topics Covered
+Topics covered:
 
 - Comparison operators
-- `=`, `==`
+- `=`
+- `==`
+- `>`
+- `<`
+- `>=`
+- `<=`
+- `!=`
 - `if`
 - `if-else`
 - `if-elif-else`
 - Logical operators
-  - `and`
-  - `or`
-  - `not`
+- `and`
+- `or`
+- `not`
 - Nested `if`
 - Boolean handling with user input
-- Threshold-based conditions
-- Resource validation
+- Threshold checking
+- Resource alerts
 
-## Hands-on Scripts
+### Practical
 
-- `comparison.py`
-- `cpu_classification.py`
-- `resource_check.py`
-- `resource_alert.py`
-- `service_check.py`
-- `combined_check.py`
-- `nested_check.py`
-- `threshold_check.py`
+- CPU classification
+- Memory/resource checking
+- Service status checking
+- Critical resource alerts
+- Nested server health checks
 
-## Mini Project
+### Project
 
-### Server Health
-
-Built a server health checking script using:
-
-- CPU utilization
-- Memory utilization
-- Service status
-- Nested conditions
-- Critical/Healthy status reporting
+`server_health.py`
 
 ---
 
-# Day 3 - Loops and Server Monitoring
+# Day 3 - Loops and Automation Logic
 
-## Topics Covered
+Topics covered:
 
 - `while` loop
 - `for` loop
 - `range()`
-- Range start, stop and step
+- Start/stop/step
 - Reverse loops
 - Loop with conditions
 - `break`
 - `continue`
 - Nested loops
 - User input with loops
-- Server-by-server processing
-- Combining loops with conditional logic
+- Nested loop conditions
+- Per-server validation
 
-## Hands-on Scripts
+### Practical
 
-- `while.py`
-- `while2.py`
-- `while3.py`
-- `while_break.py`
-- `while_continue.py`
-- `for1.py`
-- `for2.py`
-- `for_reverse.py`
-- `for_check.py`
-- `for_break.py`
-- `for_continue.py`
-- `nested_loop.py`
-- `nested_loop2.py`
-- `nested_loop3.py`
-- `server_checks.py`
-- `server_checks_skip.py`
-- `server_checks_break.py`
-- `server_validation.py`
-- `resource_scan.py`
-- `server_monitor.py`
+- Server checks
+- CPU checks
+- Memory checks
+- Service checks
+- Skip checks using `continue`
+- Stop checks using `break`
+- Resource scanning
+- Multiple server monitoring
 
-## Mini Project
+### Project
 
-### Server Monitoring
-
-Created a server monitoring script that:
-
-- Accepts number of servers
-- Collects CPU usage for each server
-- Collects memory usage for each server
-- Processes each server inside a loop
-- Performs resource validation
-- Generates a monitoring report
-- Displays Healthy/Critical status
+`server_monitor.py`
 
 ---
 
-# Learning Progress
+# Day 4 - Lists and Tuples
 
-| Day | Topic | Status |
-|-----|-------|--------|
-| Day 1 | Python Fundamentals | Completed |
-| Day 2 | Conditional Logic | Completed |
-| Day 3 | Loops & Server Monitoring | Completed |
-| Day 4 | Lists & Tuples | Upcoming |
-| Day 5 | Dictionaries & Sets | Upcoming |
-| Day 6 | Functions | Upcoming |
-| Day 7 | Functions & Modules | Upcoming |
-| Day 8 | Files & Exceptions | Upcoming |
-| Day 9 | Linux Automation | Upcoming |
-| Day 10 | Subprocess, Argparse & Logging | Upcoming |
+Topics covered:
 
----
+## Lists
 
-## Goal
+- Creating lists
+- List indexing
+- Negative indexing
+- Modifying list elements
+- `append()`
+- `insert()`
+- `remove()`
+- `pop()`
+- `len()`
+- `in` operator
+- List iteration
+- List filtering
+- `min()`
+- `max()`
+- `sum()`
+- Average calculation
+- List slicing
+- Nested lists
+- Dynamic list input
 
-Build strong Python scripting skills for real-world DevOps automation.
+## Tuples
 
-Long-term goals include:
+- Creating tuples
+- Tuple indexing
+- Tuple iteration
+- Tuple immutability
+- Difference between lists and tuples
+- List of tuples
+- Tuple-based server records
 
-- Linux automation
-- REST API automation
-- JSON/YAML processing
-- Log parsing
-- SSH/SFTP automation
-- Paramiko
-- Flask
-- Monitoring dashboards
-- AWS automation with Boto3
-- Kubernetes automation
-- Docker automation
-- 50+ practical Python scripts
+### Practical
+
+Created dynamic server inventory using a list containing tuple records.
+
+Example:
+
+```python
+servers = [
+    ("app01", 95, 65),
+    ("app02", 54, 43)
+]
